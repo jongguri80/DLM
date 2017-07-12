@@ -2,8 +2,9 @@
 Distributed Lag Model (DLM) to examine associations between the built environment and health.
 
 
-## Load nlme library which is used by some of the functions
+####### Load nlme library which is used by some of the functions
 library(nlme)
+
 library(sp)
 
 
@@ -13,7 +14,7 @@ library(sp)
 set.seed(10)
 par(mfrow = c(2,2))
 
-####### Generate locations of outcome and locations of environmental factors (e.g., convenience stores) ##
+####### Generate locations of outcome and locations of environmental factors (e.g., convenience stores)
 n_X = 3000;n_Y = 1000
 
 ####### 3000 locations of environmental factors #######
