@@ -8,7 +8,7 @@ library(sp)
 
 
 #################### Create built environment factors ####################
-### We assume that the user has to have already calculated DL covariate matrix and distance lag
+###### We assume that the user has to have already calculated DL covariate matrix and distance lag
 
 set.seed(10)
 par(mfrow = c(2,2))
