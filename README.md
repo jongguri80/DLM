@@ -13,6 +13,7 @@ library(sp)
 ####### We assume that the user has to have already calculated DL covariate matrix and distance lag
 
 set.seed(10)
+
 par(mfrow = c(2,2))
 
 ####### Generate locations of outcome and locations of environmental factors (e.g., convenience stores)
@@ -26,13 +27,17 @@ pts_X = cbind(runif(n_X, -25, 75), runif(n_X, -25, 75))
 ####### 1000 locations of outcome #######
 
 pts_Y = cbind(runif(n_Y, -25, 75), runif(n_Y, -25, 75)) 
+
 colnames(pts_X) = colnames(pts_Y) = c("x", "y") 
+
 head(pts_Y)
+
 head(pts_X)
 
 ####### Black dots are locations of environmental factors and red dots are locations of outcome #######
 
 plot(pts_X, cex=.5, pch=20)
+
 points(pts_Y, col="red", cex = .5, pch=20)
 
 ####### A vector of distance lag #######
@@ -46,11 +51,13 @@ X = DL_X(pts_Y, pts_X, Lag)
 ####### Generate individual factors, e.g., gender and age #######
 
 Gender = rbinom(n_Y, 1, 0.5)
+
 Age = rpois(n_Y, 65)
 
 ####### True DL coefficients assuming a normal kernel function #######
 
 true_DL_coeff = 0.1*dnorm(Lag, sd=5/3)/dnorm(0, sd=5/3)
+
 plot(Lag, true_DL_coeff, type="l", ylab = "DL coefficients", main="True DL coefficient over distance")
 
 ########## True variance of residual errors #######
@@ -96,25 +103,30 @@ head(Bm1$summary_DL_coeff)
 ####### Plot fitted models #######
 
 plot.dlm(fm1, main="Estimated DL coefficients \n in a frequentist framework" )
+
 plot.dlm(Bm1, main="Estimated DL coefficients \n in a Bayesian framework" )
 
 ####### Estimated DL coefficients at distance 2 #######
 
 DL_coeff_pred(fm1, dist=2)
+
 Bayes_DL_coeff_pred(Bm1, dist=2)$summary_DL_coeff_pred
 
 ####### Estimated DL coefficients at distance 2.34 #######
 
 DL_coeff_pred(fm1, dist=2.34)
+
 Bayes_DL_coeff_pred(Bm1, dist=2.34)$summary_DL_coeff_pred
 
 ####### Estimated average effects up to distance 2 #######
 
 Avg_eff(fm1, dist=2)
+
 Bayes_avg_eff(Bm1, dist=2)$summary_avg_eff
 
 ####### Estimated average effects up to distance 2.34 #######
 
 Avg_eff(fm1, dist=2.34)
+
 Bayes_avg_eff(Bm1, dist=2.34)$summary_avg_eff
 
