@@ -4,7 +4,9 @@ Distributed Lag Model (DLM) to examine associations between the built environmen
 library(devtools)
 
 install_github("jongguri80/DLM")
-####### Load nlme library which is used by some of the functions
+
+####### Load nlme library which is used by some of the functions #######
+
 library(nlme)
 library(sp)
 
