@@ -72,7 +72,7 @@ e = rnorm(n_Y, 0, sd=sqrt(true_tau_sq))
 
 ####### Generate true outcome Y, using a below true function #######
 
-Y = 0.5*Gender -0.5*Age + X %*% true_DL_coeff + e
+Y = 0.5 * Gender -0.5 * Age + X %*% true_DL_coeff + e
 
 ####### Realign a covariate matrix for other fixed effects #######
 
