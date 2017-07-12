@@ -2,7 +2,7 @@
 \alias{DL_coeff_pred}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+DL_coeff_pred uses dlm_object and predicts the DL effect at a specific distance
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

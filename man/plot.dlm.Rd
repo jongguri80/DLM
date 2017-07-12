@@ -2,7 +2,7 @@
 \alias{plot.dlm}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+This function plots the estimated distributed lag effects from dlm_object or Bayes_dlm_object.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

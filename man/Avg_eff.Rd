@@ -2,7 +2,7 @@
 \alias{Avg_eff}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Ave_eff uses dlm object and calculates the average effects up to a specified distance
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

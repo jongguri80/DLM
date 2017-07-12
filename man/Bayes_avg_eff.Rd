@@ -2,7 +2,7 @@
 \alias{Bayes_avg_eff}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Bayes_avg_eff uses the object from Bayes_dlm and calculates the average buffer effects up to a certain distance
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

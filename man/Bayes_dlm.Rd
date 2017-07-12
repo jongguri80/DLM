@@ -2,7 +2,7 @@
 \alias{Bayes_dlm}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+Fits a Bayesian distributed lag model.
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~

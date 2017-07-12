@@ -2,7 +2,7 @@
 \alias{DL_X}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-%%  ~~function to do ... ~~
+This function generate distributed lag covariates
 }
 \description{
 %%  ~~ A concise (1-5 lines) description of what the function does. ~~
